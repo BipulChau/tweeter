@@ -24,6 +24,18 @@ body {
   font-family: 'Bungee', cursive;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  padding: 5% 10%;
+  color: white;
+  background-color: royalblue;
+  display: flex;
+  justify-content: space-between;
+}
+
 body{
   font-family: 'Source Sans Pro', sans-serif;
 }
