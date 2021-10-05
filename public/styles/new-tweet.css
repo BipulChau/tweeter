@@ -1,0 +1,44 @@
+
+form label{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 5;
+}
+
+#tweet-text{
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  resize: none;
+  width: 90%;
+  height: 35px;
+}
+
+.tweetIt{
+  border-color: solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+
+}
+
+/* .counter{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+} */
+
+button{
+  border: none;
+  background-color: #4056a1;
+  color: #ffffff;
+  font-family: 'Bungee', cursive;
+}
