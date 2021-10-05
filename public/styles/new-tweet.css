@@ -1,5 +1,5 @@
 
-form label{
+label{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
 }
@@ -7,38 +7,42 @@ form label{
 .new-tweet {
   display: flex;
   flex-direction: column;
-  flex-grow: 5;
+  flex-grow: 1;
 }
 
 #tweet-text{
   outline: 0;
-  border-width: 0 0 2px;
+  border-width: 0 0 4px;
   border-color: black;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
+  background-color: transparent;
+  border-style: solid; 
+  font-weight: 300;
   resize: none;
-  width: 90%;
-  height: 35px;
+  width: 100%;
+  height: 25px;    
 }
 
-.tweetIt{
-  border-color: solid black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.justTwitIt{
   
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  margin-top: 7px;
 
-}
+} 
 
 /* .counter{
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
+  font-family: 'Bungee', cursive;
+  
 } */
 
 button{
   border: none;
   background-color: #4056a1;
   color: #ffffff;
-  font-family: 'Bungee', cursive;
+  /* font-family: 'Bungee', cursive; */
 }
