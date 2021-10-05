@@ -7,15 +7,11 @@ $('#tweet-text').on("input", function(event){
     let max =140;
     $(this).parent().children(".justTwitIt").children(".counter").text(140-length) ;
     if(length > max) {
-      $(this).parent().children(".justTwitIt").children(".counter").css({"color": "red"})
+      //$(this).parent().children(".justTwitIt").children(".counter").css({"color": "red"})
+      $(this).parent().children(".justTwitIt").children(".counter").addClass("red")
       
     }
-// $(this).parent().children(".justTwitIt").children(".counter").text(140-length) 
 
-
-    
-    //   $(this).parent().children(".justTwitIt").children(".counter").css({"color": "red"})
-    // }
 })
 
 
