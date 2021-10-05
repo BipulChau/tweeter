@@ -17,28 +17,23 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
 
-.twitterLogo{
-  font-family: 'Bungee', cursive;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  height: 100px;
-  width: 100%;
-  padding: 5% 10%;
-  color: white;
-  background-color: royalblue;
+.container {
+  width: 90%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* align-items: center; */
+  margin: 0 5%;
 }
 
-body{
-  font-family: 'Source Sans Pro', sans-serif;
-}
+
+
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

@@ -1,5 +1,5 @@
-.twitterLogo{
-  font-family: 'Bungee', cursive;
+.twitterLogo {
+  font-family: "Bungee", cursive;
 }
 
 nav {
@@ -8,13 +8,15 @@ nav {
   height: 120px;
   width: 100%;
   padding: 1.5em;
-  color:#FFFFFF;
-  background-color: #4056A1;
+  color: #ffffff;
+  background-color: #4056a1;
   display: flex;
   justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-.arrow{
+.arrow {
   display: flex;
   flex-direction: column;
   padding-right: 1.5em;
