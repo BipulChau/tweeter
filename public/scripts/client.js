@@ -33,6 +33,11 @@ const data = [
 $(() => {
   $.get("/tweets/", data, (data) =>{
     console.log("Data: ", data)
+    const singleTweet = data[0];
+    const $tweet = createTweetElement(singleTweet);
+    //console.log($tweet)
+    const $tweetContainer = $(".tweetContainer");
+    $tweetContainer.append($tweet);
   }, "json")
   
   const renderTweets = function(tweets) {
@@ -41,12 +46,43 @@ $(() => {
     // takes return value and appends it to the tweets container
   }
   
-  // const createTweetElement = function(tweet) {
-  //   let $tweet = /* Your code for creating the tweet element */
-  //   // ...
-  //   return $tweet;
-  // }
+  const createTweetElement = function(tweet) {
+    // let $tweet = /* Your code for creating the tweet element */
+    // ...
+    let $tweet = $(`
+    <article class="old-Tweet"> 
+          <header>
+            <div class="image"> 
+              <img src=${tweet.user.avatars}>
+              <span > ${tweet.user.name}</span>
+            </div>
+            <div class="name" >
+              <span><strong>${tweet.user.handle}</strong></span>
+              
+            </div>
   
+          </header>
+  
+          <div class= "tweet">
+            <p>${tweet.content.text}</p>
+             </div>
+  
+             <footer> 
+              <span>${tweet.created_at}</span>
+              <div class="tweeticon">
+                <i class="fas fa-flag"></i>
+                <i class="fas fa-retweet"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+
+             </footer>
+  
+        </article>
+    `)
+
+    return $tweet;
+  }
+  //return $tweet;
   renderTweets(data);
 })
 
