@@ -41,6 +41,8 @@ $(() => {
     renderTweets(data);
 
   }, "json")
+
+  
   
   const renderTweets = function(tweets) {
     // loops through tweets
@@ -76,7 +78,8 @@ $(() => {
              </div>
   
              <footer> 
-              <span>${tweet.created_at}</span>
+              <span>${timeago.format(tweet.created_at)}</span>
+              
               <div class="tweeticon">
                 <i class="fas fa-flag"></i>
                 <i class="fas fa-retweet"></i>
