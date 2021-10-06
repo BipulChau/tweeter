@@ -34,16 +34,24 @@ $(() => {
   $.get("/tweets/", data, (data) =>{
     console.log("Data: ", data)
     const singleTweet = data[0];
-    const $tweet = createTweetElement(singleTweet);
+    //const $tweet = createTweetElement(singleTweet);
     //console.log($tweet)
-    const $tweetContainer = $(".tweetContainer");
-    $tweetContainer.append($tweet);
+    //const $tweetContainer = $(".tweetContainer");
+    //$tweetContainer.append($tweet);
+    renderTweets(data);
+
   }, "json")
   
   const renderTweets = function(tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
+    const $tweetContainer = $(".tweetContainer");
+    $tweetContainer.empty();
+    for (const tweet of tweets) {
+      const $tweet = createTweetElement(tweet);
+      $tweetContainer.append($tweet);
+    }
   }
   
   const createTweetElement = function(tweet) {
@@ -83,6 +91,6 @@ $(() => {
     return $tweet;
   }
   //return $tweet;
-  renderTweets(data);
+  //renderTweets(data);
 })
 
