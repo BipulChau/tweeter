@@ -106,11 +106,22 @@ $(() => {
   $form.on("submit", function (event) {
     event.preventDefault();
     //console.log("form was submitted");
+   // console.log($(this));
     const serializedData = $(this).serialize();
-    //console.log(serializedData);
+    //console.log($("#tweet-text").val());
+    const text = $("#tweet-text").val();
+    if (!text) {
+      alert("Oops! It's an empty tweet");
+      return;
+    }
+    if (text.length > 140) {
+      alert("Oops! Tweet content is too long");
+      return;
+    }
     $.post("/tweets/", serializedData, (response) => {
      // console.log(response);
       loadTweets();
+      
     });
   });
 });
