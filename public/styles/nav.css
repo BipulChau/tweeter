@@ -24,3 +24,20 @@ nav {
   align-items: center;
   font-size: 18px;
 }
+
+/* @media screen and (min-width: 1024px) {
+  nav {
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 25%;
+    padding: 1.5em;
+    color: #ffffff;
+    background-color: #4056a1;
+    display: flex;
+    justify-content: left;
+    /* /justify-content: space-between; */
+    position: -webkit-sticky;
+    position: sticky;
+  }
+} */

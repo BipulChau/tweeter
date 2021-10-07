@@ -31,7 +31,25 @@ body {
   margin: 0 5%;
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0 5%;
+  }
+}
 
+@media screen and (min-width: 1024px){
+  #masterContainer {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 
 
