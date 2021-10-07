@@ -49,3 +49,8 @@ button{
   color: #ffffff;
   /* font-family: 'Bungee', cursive; */
 }
+
+button:hover {
+  box-shadow: 3px 3px 3px rgb(64 86 161 / 0.7) ;
+  }
+
