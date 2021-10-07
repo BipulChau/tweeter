@@ -102,6 +102,10 @@ $(() => {
   //return $tweet;
   //renderTweets(data);
 
+  $('#charOverLimit').hide()
+  $('#emptyTweet').hide()
+
+
   const $form = $("#new-tweet-form");
   $form.on("submit", function (event) {
     event.preventDefault();
@@ -111,11 +115,13 @@ $(() => {
     //console.log($("#tweet-text").val());
     const text = $("#tweet-text").val();
     if (!text) {
-      alert("Oops! It's an empty tweet");
+      // alert("Oops! It's an empty tweet");
+      $('#emptyTweet').show()
       return;
     }
     if (text.length > 140) {
-      alert("Oops! Tweet content is too long");
+      // alert("Oops! Tweet content is too long");
+      $('#charOverLimit').show()
       return;
     }
     $.post("/tweets/", serializedData, (response) => {
