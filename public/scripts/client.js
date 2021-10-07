@@ -102,32 +102,36 @@ $(() => {
   //return $tweet;
   //renderTweets(data);
 
-  $('#charOverLimit').hide()
-  $('#emptyTweet').hide()
-
+  $("#charOverLimit").hide();
+  $("#emptyTweet").hide();
 
   const $form = $("#new-tweet-form");
   $form.on("submit", function (event) {
     event.preventDefault();
+    $("#charOverLimit").hide();
+    $("#emptyTweet").hide();
     //console.log("form was submitted");
-   // console.log($(this));
+    // console.log($(this));
     const serializedData = $(this).serialize();
     //console.log($("#tweet-text").val());
     const text = $("#tweet-text").val();
     if (!text) {
       // alert("Oops! It's an empty tweet");
-      $('#emptyTweet').show()
+      $("#emptyTweet").show();
       return;
     }
     if (text.length > 140) {
       // alert("Oops! Tweet content is too long");
-      $('#charOverLimit').show()
+      $("#charOverLimit").show();
       return;
     }
+    // $('#charOverLimit').hide()
+    // $('#emptyTweet').hide()
     $.post("/tweets/", serializedData, (response) => {
-     // console.log(response);
+      // console.log(response);
+      $("#charOverLimit").hide();
+      $("#emptyTweet").hide();
       loadTweets();
-      
     });
   });
 });
