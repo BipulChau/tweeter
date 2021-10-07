@@ -65,6 +65,15 @@ $(() => {
   const createTweetElement = function (tweet) {
     // let $tweet = /* Your code for creating the tweet element */
     // ...
+    // const $avatar = $(".image").append(`<img src=${tweet.user.avatars}>`);
+    // const $name = $(".image span").text(tweet.user.name);
+    // const $handle = $(".name span").text(tweet.user.handle);
+    // const $content = $(".tweet p").text(tweet.content.text);
+    // const $created_at = $(".tweet span").text(`${timeago.format(tweet.created_at)}`);
+
+    // const $tweet = $("<article>").addClass("old-Tweet");
+    // $tweet.append($avatar, $name, $handle, $content, $created_at);
+
     let $tweet = $(`
     <article class="old-Tweet"> 
           <header>
