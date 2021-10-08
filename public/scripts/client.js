@@ -53,7 +53,7 @@ $(() => {
           </header>
   
           <div class= "tweet">
-            <p>${tweet.content.text}</p>
+            <p>${escape(tweet.content.text)}</p>
              </div>
   
              <footer> 
@@ -103,3 +103,9 @@ $(() => {
     });
   });
 });
+
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
