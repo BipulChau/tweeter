@@ -141,6 +141,7 @@ $(() => {
       $("#charOverLimit").hide();
       $("#emptyTweet").hide();
       $("#tweet-text").val("");
+      $(".counter").val(140);
       loadTweets();
     });
   });
