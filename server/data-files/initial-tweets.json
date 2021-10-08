@@ -8,11 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-<<<<<<< HEAD
-    "created_at": 1633317519404
-=======
-    "created_at": 1633317782165
->>>>>>> anotherbarnch
+    "created_at": 1633484680963
   },
   {
     "user": {
@@ -23,10 +19,6 @@
     "content": {
       "text": "Je pense , donc je suis"
     },
-<<<<<<< HEAD
-    "created_at": 1633403919404
-=======
-    "created_at": 1633404182165
->>>>>>> anotherbarnch
+    "created_at": 1633571080963
   }
 ]
