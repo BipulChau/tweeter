@@ -1,4 +1,4 @@
-#forNav{
+#forNav {
   height: 400px;
   width: 100%;
   display: flex;
@@ -6,13 +6,13 @@
   justify-content: flex-end;
   align-items: center;
   background-color: #cc8100;
-background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
 @media screen and (min-width: 1024px) {
-  #forNav{
+  #forNav {
     margin-top: 50px;
-    margin-left: 50px ;
+    margin-left: 50px;
     height: 50%;
     width: 25%;
     display: flex;
@@ -20,6 +20,6 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
     justify-content: flex-end;
     align-items: center;
     background-color: #cc8100;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   }
 }

@@ -29,13 +29,6 @@ label {
   margin-top: 7px;
 }
 
-/* .counter{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-  font-family: 'Bungee', cursive;
-  
-} */
 .red {
   color: red;
 }
@@ -80,13 +73,3 @@ button:hover {
   padding-left: 25px;
   position: relative;
 }
-
-
-/* @media screen and (min-width: 1024px){
-  .new-tweet {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-} */
-
