@@ -19,12 +19,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product:
 
-!["screenshot of desktop view"](https://github.com/BipulChau/tweeter/blob/master/docs/Desktop%20view.png?raw=true)
+!["screenshot of desktop view"](https://github.com/BipulChau/tweeter/blob/master/docs/Desktop-view.png?raw=true)
 
-!["screenshot of error - when user submits empty tweet"](https://github.com/BipulChau/tweeter/blob/master/docs/Error%20-%20empty%20tweet.png?raw=true)
-!["screenshot of error -  when users submits tweet with characters more than specified"](https://github.com/BipulChau/tweeter/blob/master/docs/Error%20-Num%20of%20char%20exceeded.png?raw=true)
-!["screenshot of mobile view - Top"](https://github.com/BipulChau/tweeter/blob/master/docs/Mobile%20View%201.png?raw=true)
-!["screenshot of mobile view - Bottom""](https://github.com/BipulChau/tweeter/blob/master/docs/Mobile%20view%202.png?raw=true)
+!["screenshot of error - when user submits empty tweet"](https://github.com/BipulChau/tweeter/blob/master/docs/Error-empty%20tweet.png?raw=true)
+!["screenshot of error -  when users submits tweet with characters more than specified"](https://github.com/BipulChau/tweeter/blob/master/docs/Error%20-%20long%20tweet.png?raw=true)
+!["screenshot of mobile view - Top"](https://github.com/BipulChau/tweeter/blob/master/docs/Mobile%20view%20Top.png?raw=true)
+!["screenshot of mobile view - Bottom""](https://github.com/BipulChau/tweeter/blob/master/docs/Mobile%20view%20bottpm.png?raw=true)
 
 ### Thank you for viewing my project work. - Bipul Chaudhary
 
